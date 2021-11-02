@@ -15,7 +15,7 @@ let  partsOfRezumeEngl = {
         works: [
             // work1:
             {
-                position: 'Freelance',
+                position: '<span class="my-work-expirience-company">Freelance</span>',
                 period: 'june 2019 - now <span class="my-work-expirience-period-divider">|</span> Ukraine',
                 duties: [
                     'HTML +JS coding',
@@ -28,7 +28,7 @@ let  partsOfRezumeEngl = {
                 ,
             // work2:
             {
-                position: 'Ingenier-Programs  Central Ambulance of the  Lysyanka district',
+                position: 'Ingenier-Programs  <span class="my-work-expirience-company">Central Ambulance of the  Lysyanka district</span>',
                 period: 'june 2019 - Februar 2020 <span class="my-work-expirience-period-divider">|</span> Ukaraine',
                 duties: [
                     'Accounting programs',
@@ -44,7 +44,7 @@ let  partsOfRezumeEngl = {
             ,
             // work3:
             {
-                position: 'Main specialist IT Lysyanka court Cherkassy district',
+                position: 'Main specialist IT <span class="my-work-expirience-company"> Lysyanka court Cherkassy district</span>',
                 period: 'september 2020 - may 2021 <span class="my-work-expirience-period-divider">|</span> Ukraine',
                 duties: [
                     'Ensuring stable operation of Windows Server 2008/2016 servers',
@@ -63,8 +63,7 @@ let  partsOfRezumeEngl = {
         title: 'Education',
         uni: 'Cerkaskyj nacionalnyj universytet imeni Bohdana Chmelnyckoho',
         spec: 'physics-mathematics',
-        period: 'september 1989 - june 1994 \n' +
-            '                        <span class="my-work-expirience-period-divider">|</span> Ukraine'
+        period: 'september 1989 - june 1994 <span class="my-work-expirience-period-divider">|</span> Ukraine'
     }
 }
 
@@ -74,10 +73,10 @@ function aboutMe(){
     let textAboutMeName = document.getElementById("about-me-name");
     let textAboutMeDescription = document.getElementById("about-me-description-text");
 
-    let tempProfession = textAboutMeProfession.innerText
-    let tempName = textAboutMeName.innerText
+    let tempProfession = textAboutMeProfession.innerHTML
+    let tempName = textAboutMeName.innerHTML
 
-    let tempDescription = textAboutMeDescription.innerText
+    let tempDescription = textAboutMeDescription.innerHTML
 
     textAboutMeProfession.innerHTML  = partsOfRezumeEngl.aboutMe.profession;
     partsOfRezumeEngl.aboutMe.profession =tempProfession;
@@ -91,22 +90,22 @@ function aboutMe(){
 function workExpirience() {
     // my-work-expirience-section
     let mainContentName = document.getElementById("work-expirience-name"); //expirience name
-    let tempMainName = mainContentName.innerText
-    document.getElementById("work-expirience-name").innerText = partsOfRezumeEngl.workExpirience.name
+    let tempMainName = mainContentName.innerHTML
+    document.getElementById("work-expirience-name").innerHTML = partsOfRezumeEngl.workExpirience.name
     partsOfRezumeEngl.workExpirience.name = tempMainName
     i = 0
     partsOfRezumeEngl.workExpirience.works.forEach((work)=> {
 
         let period ="my-work-expirience-period-w"+(i+1);
         let mainContentPeriod = document.getElementById(period); //expirience name
-        let tempMainPeriod = mainContentPeriod.innerText
-        document.getElementById("my-work-expirience-period-w"+(i+1)).innerText =  work.period
+        let tempMainPeriod = mainContentPeriod.innerHTML
+        document.getElementById("my-work-expirience-period-w"+(i+1)).innerHTML =  work.period
          work.period = tempMainPeriod
         //
         let postion ="my-work-expirience-position-w" + (i+1);
         let mainContentPosition = document.getElementById(postion); //expirience зщышешщт
-        let tempMainPosition = mainContentPosition.innerText
-        document.getElementById("my-work-expirience-position-w" + (i+1)).innerText = work.position
+        let tempMainPosition = mainContentPosition.innerHTML
+        document.getElementById("my-work-expirience-position-w" + (i+1)).innerHTML = work.position
         work.position = tempMainPosition
 
         //
@@ -134,10 +133,10 @@ function education(){
     let textEducationSpec = document.getElementById("my-education-spec");
     let textEducationPeriod = document.getElementById("my-education-period");
 
-    let tempEducationTitle = textEducationTitle.innerText
-    let tempEducationUni = textEducationUni.innerText
-    let tempEducationSpec = textEducationSpec.innerText
-    let tempEducationPeriod = textEducationPeriod.innerText
+    let tempEducationTitle = textEducationTitle.innerHTML
+    let tempEducationUni = textEducationUni.innerHTML
+    let tempEducationSpec = textEducationSpec.innerHTML
+    let tempEducationPeriod = textEducationPeriod.innerHTML
 
     textEducationTitle.innerHTML  = partsOfRezumeEngl.education.title;
     partsOfRezumeEngl.education.title =tempEducationTitle;
