@@ -10,24 +10,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/main.js"></script >
 </head>
 
 <body>
     <!--    main container-->
     <div class="main-container">
         <!--main content section-->
+	    
         <div class="main-content-section">
+<!--	        <button id="changeLang" onclick="changeLang()">Change Lang</button>-->
             <!--    about me-->
             <div class="about-me-section">
-                <h2 class="about-me-profession">Front-End Developer</h2>
-                <h1 class="about-me-name">Андрей Сокирко</h1>
+                <h2 id="about-me-profession" class="about-me-profession">Фронтенд разработчик</h2>
+	            <button id="changeLang" onclick="changeLang()" style="float: right;">Change Language</button>
+                <h1 id="about-me-name" class="about-me-name">Андрей Сокирко</h1>
                 <p class="about-me-description">
-	                <span> WEB: HTML, CSS, Bootstrap(сетка)</span>
-	                <span> JQUERY, JS, PhotoSHop(нарезка)</span>
-                    <span> OpenCart(1.5;2.0), WPRESS, WOOCOMMERCE</span>
-                    <span> Laravel 5.2, 6,  PHP 5</span>
-                    <span> AJAX, Vue, Vuex, Angular2 (base)</span>
-                    <span> Yii2(base), GULP, SASS, FIGMA, GIT</span>
+	            <span id = "about-me-description-text" >
+		            Я опытный системный администратор и одновременно начинающий
+	                фронтенд-разработчик. Опыт в IT
+	                более
+	                пятндцати лет. Написано много придкладных програм для автоматизации рабочих
+	                процесов. Постоянно
+	                изучаю новшества и новые направления в области IT. Основной стек изученного и
+	                применяемого мною
+	                следующий:
+	            </span >
+	                <br >
+	                <span>- WEB: HTML, CSS, Bootstrap(сетка)</span>
+	                <span>- JQUERY, JS, PhotoSHop(нарезка)</span>
+                    <span>- OpenCart(1.5;2.0), WORDPRESS, WOOCOMMERCE</span>
+                    <span>- Laravel 5.2, 6,  PHP 5</span>
+                    <span>- AJAX, Vue, Vuex, Angular2 (base)</span>
+                    <span>- Yii2(base), GULP, SASS, FIGMA, GIT</span>
+	                
                     </p>
             </div>
             <!--my projects section -->
@@ -66,23 +82,25 @@
             </div>
             <!--My work expirience-->
             <div class="my-work-expirience-section">
-                <h3 class="main-content-title">Опыт</h3>
+                <h3 id="work-expirience-name" class="main-content-title">Опыт</h3>
                 <!--company 1-->
                 <div class="my-work-expirience-company-block">
-                    <h4 class="my-work-expirience-position">Front-End Developer <span class="my-work-expirience-company">Freelance</span></h4>
-                    <p class="my-work-expirience-period">  2012 -  ......  <span class="my-work-expirience-period-divider">|</span> Ukraine</p>
-                    <ul class="my-work-expirience-duties">
+                    <h4 id="my-work-expirience-position-w1" class="my-work-expirience-position">Фронтенд разработчик <span class="my-work-expirience-company">Freelance</span></h4>
+                    <p id="my-work-expirience-period-w1" class="my-work-expirience-period">  2012 -  ......  <span class="my-work-expirience-period-divider">|</span> Ukraine</p>
+                    <ul id="my-work-expirience-duties-w1" class="my-work-expirience-duties">
+                        <li class="my-work-expirience-duty">HTML +JS coding</li>
                         <li class="my-work-expirience-duty">CMS Open cart 1.5</li>
                         <li class="my-work-expirience-duty">Wordpress- Widget, layouts, custom fields….</li>
                         <li class="my-work-expirience-duty">Laravel, Yii2 - changing makeup(base level)</li>
+	                    <li class="my-work-expirience-duty"><a class="my-projects-link" href="https://freelance.ua/user/sorey14/portfolio/" >freelance.ua/user/sorey14/portfolio/</a ></li>
                     </ul>
                 </div>
                 <!--company 2-->
                 <div class="my-work-expirience-company-block">
-                    <h4 class="my-work-expirience-position">Инженер программист <span class="my-work-expirience-company">Лысянская районная больница</span></h4>
-                    <p class="my-work-expirience-period">июнь 2019 - февраль 2020  <span class="my-work-expirience-period-divider">|</span> Ukaraine</p>
-                    <ul class="my-work-expirience-duties">
-                        <li class="my-work-expirience-duty">Администрирование Вебсайта https://lisjanska.crl.net.ua/ <a class="my-projects-link" href="https://lisjanska.crl.net.ua/">https://lisjanska.crl.net.ua/</a> </li>
+                    <h4 id="my-work-expirience-position-w2" class="my-work-expirience-position">Инженер программист <span class="my-work-expirience-company">Лысянская районная больница</span></h4>
+                    <p id="my-work-expirience-period-w2" class="my-work-expirience-period">июнь 2019 - февраль 2020  <span class="my-work-expirience-period-divider">|</span> Ukraine</p>
+                    <ul id="my-work-expirience-duties-w2" class="my-work-expirience-duties">
+                        <li class="my-work-expirience-duty">Администрирование Вебсайта  <a class="my-projects-link" href="https://lisjanska.crl.net.ua/">lisjanska.crl.net.ua</a> </li>
                         <li class="my-work-expirience-duty">Администрирование  BestZvit</li>
                         <li class="my-work-expirience-duty">Поддержка работоспособности ЛАН и WAN</li>
                         <li class="my-work-expirience-duty">Диагностика ПК определение несправностей</li>
@@ -91,12 +109,13 @@
                 </div>
                 <!--company 3-->
                 <div class="my-work-expirience-company-block">
-                    <h4  class="my-work-expirience-position">Главный специалист IT <span class="my-work-expirience-company">Лысянский районный суд Черкасской области</span></h4>
-                    <p class="my-work-expirience-period">сентябрь 2020 - май 2021 <span class="my-work-expirience-period-divider">| </span> Country</p>
-                    <ul class="my-work-expirience-duties">
+                    <h4 id="my-work-expirience-position-w3" class="my-work-expirience-position">Главный специалист IT <span class="my-work-expirience-company">Лысянский районный суд Черкасской области</span></h4>
+                    <p id="my-work-expirience-period-w3" class="my-work-expirience-period">сентябрь 2020 - май 2021 <span class="my-work-expirience-period-divider">| </span> Ukraine</p>
+                    <ul id="my-work-expirience-duties-w3" class="my-work-expirience-duties">
                         <li class="my-work-expirience-duty">Обеспечение стабильной работы серверов Windows Server 2008/2016</li>
                         <li class="my-work-expirience-duty">Администрирование пользователей домена (актив директория)</li>
-                        <li class="my-work-expirience-duty">Администрирование сайта суда https://ls.ck.court.gov.ua/</li>
+                        <li class="my-work-expirience-duty">Администрирование сайта суда
+	                        <a class="my-projects-link" href="https://ls.ck.court.gov.ua/" >ls.ck.court.gov.ua/</a ></li>
                         <li class="my-work-expirience-duty">Безопасность системы, бекапы БД (Firebase)/ ПО Д-3(судовые дела),Accord (система ведения видеофиксации), Изикон –связь с другими судами </li>
                         <li class="my-work-expirience-duty">Поддержка работоспособности ЛАН и WAN, Cisko5055</li>
                         <li class="my-work-expirience-duty">Диагностика ПК определение несправностей (25 ед.),
@@ -107,12 +126,12 @@
             </div>
             <!--Education -->
             <div class="my-education-section">
-                <h3 class="main-content-title">Образование</h3>
+                <h3  id="main-content-title" class="main-content-title">Образование</h3>
                 <div>
-                    <h4 class="my-education-uni"> Черкасский национальный университет имени Богдана Хмельницкого</h4>
-                    <h2 class="my-education-spec">физика –математика</h2>
+                    <h4 id="my-education-uni" class="my-education-uni"> Черкасский национальный университет имени Богдана Хмельницкого</h4>
+                    <h2 id="my-education-spec" class="my-education-spec">физика –математика</h2>
                     <!--размер такой же как в первом блоке field frontend developer-->
-                    <p class="my-education-period">сентябрь 1989 - июнь 1994 
+                    <p id="my-education-period" class="my-education-period">сентябрь 1989 - июнь 1994
                         <span class="my-work-expirience-period-divider">|</span> Ukraine</p>
                 </div>
             </div>
