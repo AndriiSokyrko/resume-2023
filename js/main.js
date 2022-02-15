@@ -21,7 +21,7 @@ let  partsOfRezumeEngl = {
                     'HTML +JS coding',
                     'CMS Open cart 1.5',
                     'Wordpress- Widget, layouts, custom fields…',
-                    'Laravel, Yii2 - changing makeup(base level)',
+                    'Laravel - changing makeup(base level)',
                     'https://freelance.ua/user/sorey14/portfolio/'
                 ]
             }
