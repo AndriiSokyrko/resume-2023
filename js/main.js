@@ -1,161 +1,132 @@
-let  partsOfRezumeEngl = {
+import {
+    about_en, about_ua,
+    cources,
+    skills,
+    about_general_ua,
+    about_general_en,
+    block_name_ua,
+    block_name_en,
+    education_ua,
+    education_en,
+    expirience_ua,
+    expirience_en, contacts
+} from '../dates/dates.js'
+let lang = 'en'
+const about_change_lang = document.querySelector('#about_change_lang')
 
-    aboutMe: {
-        profession: 'Front-End Developer',
-        name: 'Andrii Sokyrko',
-        description: 'I am an experienced sysadmin and at the same' +
-            ' time a beginner front-end developer. More than fifteen ' +
-            'years of experience in IT. Many applications have been ' +
-            'written to automate workflows. I am constantly studying ' +
-            'innovations and new directions in the field of IT. The main ' +
-            'stack that I have learned and used is as follows:'
-    },
-    workExpirience: {
-        name:'Expirience',
-        works: [
-            // work1:
-            {
-                position: '<span class="my-work-expirience-company">Freelance</span>',
-                period: 'june 2019 - now <span class="my-work-expirience-period-divider">|</span> Ukraine',
-                duties: [
-                    'HTML +JS coding',
-                    'CMS Open cart 1.5',
-                    'Wordpress- Widget, layouts, custom fields…',
-                    'Laravel - changing makeup(base level)',
-                    'https://freelance.ua/user/sorey14/portfolio/'
-                ]
-            }
-                ,
-            // work2:
-            {
-                position: 'Ingenier-Programs  <span class="my-work-expirience-company">Central Ambulance of the  Lysyanka district</span>',
-                period: 'june 2019 - Februar 2020 <span class="my-work-expirience-period-divider">|</span> Ukaraine',
-                duties: [
-                    'Accounting programs',
-                    '(BestZvit, Dilcon) \/ add new users',
-                    'Administration of the Website <a class="my-projects-link" href="https://lisjanska.crl.net.ua"\>lisjanska.crl.net.ua</a>',
-                    'Create new clients Bestzvit',
-                    'Support LAN and WAN health',
-                    'Email, anti-virus update',
-                    'PC diagnostics identification of malfunctions',
-                    'User training'
-                ]
-            }
-            ,
-            // work3:
-            {
-                position: 'Main specialist IT <span class="my-work-expirience-company"> Lysyanka court Cherkassy district</span>',
-                period: 'september 2020 - may 2021 <span class="my-work-expirience-period-divider">|</span> Ukraine',
-                duties: [
-                    'Ensuring stable operation of Windows Server 2008/2016 servers',
-                    'Administration of domain users (asset directory)',
-                    'Administration of the court website <a class="my-projects-link" href="https:\//ls.ck.court.gov.ua/sud2311"\> ls.ck.court.gov.ua/sud2311<\/a>',
-                    'System security, database backups (Firebase) / software D-3 (ship cases), Accord (video recording system), Izikon - communication with other ships',
-                    'LAN and WAN health support, Cisko5055',
-                    'Email, anti-virus update',
-                    'PC diagnostics determination of malfunctions (25 units)',
-                    'User supprt and training'
-                ]
-            }
-        ]
-    },
-    education: {
-        title: 'Education',
-        uni: 'Cerkaskyj nacionalnyj universytet imeni Bohdana Chmelnyckoho',
-        spec: 'physics-mathematics',
-        period: 'september 1989 - june 1994 <span class="my-work-expirience-period-divider">|</span> Ukraine'
-    }
+about_change_lang.addEventListener('click',(e) => {
+    e.preventDefault()
+    lang = e.target.value
+    init()
+
+})
+
+const init = () => {
+    aboutFn();
+    coursesFn();
+    expirienceFn();
+    educationFn();
+    contactsFn();
+    skillsFn();
 }
 
-function aboutMe(){
-    // about-me-text
-    let textAboutMeProfession = document.getElementById("about-me-profession");
-    let textAboutMeName = document.getElementById("about-me-name");
-    let textAboutMeDescription = document.getElementById("about-me-description-text");
+init()
 
-    let tempProfession = textAboutMeProfession.innerHTML
-    let tempName = textAboutMeName.innerHTML
-
-    let tempDescription = textAboutMeDescription.innerHTML
-
-    textAboutMeProfession.innerHTML  = partsOfRezumeEngl.aboutMe.profession;
-    partsOfRezumeEngl.aboutMe.profession =tempProfession;
-
-    textAboutMeName.innerHTML  = partsOfRezumeEngl.aboutMe.name;
-    partsOfRezumeEngl.aboutMe.name =tempName;
-
-    textAboutMeDescription.innerHTML  = partsOfRezumeEngl.aboutMe.description;
-    partsOfRezumeEngl.aboutMe.description =tempDescription;
+function aboutFn(){
+    const about_fio_block = document.querySelector('#about_fio_block')
+    const about_description = document.querySelector('#about_description')
+    const about_major = document.querySelector('#about_major')
+    const about_general = lang==='ua' ? about_general_ua : about_general_en;
+    const about_text = lang==='ua' ? about_ua : about_en;
+    about_fio_block.innerHTML = about_general.name;
+    about_major.innerHTML = about_general.magor;
+    about_description.innerHTML = about_text.join(',')
 }
-function workExpirience() {
-    // my-work-expirience-section
-    let mainContentName = document.getElementById("work-expirience-name"); //expirience name
-    let tempMainName = mainContentName.innerHTML
-    document.getElementById("work-expirience-name").innerHTML = partsOfRezumeEngl.workExpirience.name
-    partsOfRezumeEngl.workExpirience.name = tempMainName
-    i = 0
-    partsOfRezumeEngl.workExpirience.works.forEach((work)=> {
 
-        let period ="my-work-expirience-period-w"+(i+1);
-        let mainContentPeriod = document.getElementById(period); //expirience name
-        let tempMainPeriod = mainContentPeriod.innerHTML
-        document.getElementById("my-work-expirience-period-w"+(i+1)).innerHTML =  work.period
-         work.period = tempMainPeriod
-        //
-        let postion ="my-work-expirience-position-w" + (i+1);
-        let mainContentPosition = document.getElementById(postion); //expirience зщышешщт
-        let tempMainPosition = mainContentPosition.innerHTML
-        document.getElementById("my-work-expirience-position-w" + (i+1)).innerHTML = work.position
-        work.position = tempMainPosition
+function coursesFn(){
+    const block_name = lang==='ua' ? block_name_ua : block_name_en;
+    const courses_title = document.querySelector('#courses_title')
+    const courses_description = document.querySelector('#courses_description')
+    courses_description.innerHTML = ''
+    courses_title.innerHTML = block_name[0].name
+    cources.map(course => {
+        const li = document.createElement('li')
+        li.innerHTML = `<span>${course.name}</span>   <span>${course.year}</span>`
+        courses_description.append(li);
+    })
 
-        //
-        let textAboutMeDuties = [...document.getElementById("my-work-expirience-duties-w" + (i+1)).children];
-        let temp = []
-        textAboutMeDuties.forEach((child, index) => {
-            temp.push(child.innerHTML)
+}
+
+function expirienceFn() {
+    const block_name = lang==='ua' ? block_name_ua : block_name_en;
+    const expirience = lang==='ua' ? expirience_ua : expirience_en;
+    const expirience_title = document.querySelector('#expirience_title')
+    const expirience_description = document.querySelector('#expirience_description')
+    expirience_description.innerHTML = '';
+    expirience_title.innerHTML = block_name[2].name
+
+    expirience.map(exp => {
+        const li = document.createElement('li')
+        li.innerHTML = `<div>
+            <h3>${exp.position}</h3>
+            <spam>${exp.period}</spam>
+        </div>`
+        exp.duties.map(elm => {
+            const ol = document.createElement('ol')
+            ol.innerHTML = elm
+            li.append(ol)
         })
-        j = 0
-        var children = document.querySelectorAll('#my-work-expirience-duties-w' + (i+1) + ' .my-work-expirience-duty');
-            children.forEach((child) => {
-                // console.log(child)
-            child.innerHTML = work.duties[j]
-             work.duties[j] = temp[j]
-            j++
-        });
-        i++
-    }
-    )
-}
-function education(){
-    // about-me-text
-    let textEducationTitle = document.getElementById("main-content-title");
-    let textEducationUni = document.getElementById("my-education-uni");
-    let textEducationSpec = document.getElementById("my-education-spec");
-    let textEducationPeriod = document.getElementById("my-education-period");
-
-    let tempEducationTitle = textEducationTitle.innerHTML
-    let tempEducationUni = textEducationUni.innerHTML
-    let tempEducationSpec = textEducationSpec.innerHTML
-    let tempEducationPeriod = textEducationPeriod.innerHTML
-
-    textEducationTitle.innerHTML  = partsOfRezumeEngl.education.title;
-    partsOfRezumeEngl.education.title =tempEducationTitle;
-
-    textEducationUni.innerHTML  = partsOfRezumeEngl.education.uni;
-    partsOfRezumeEngl.education.uni =tempEducationUni;
-
-    textEducationSpec.innerHTML  = partsOfRezumeEngl.education.spec;
-    partsOfRezumeEngl.education.spec =tempEducationSpec;
-
-    textEducationPeriod.innerHTML  = partsOfRezumeEngl.education.period;
-    partsOfRezumeEngl.education.period =tempEducationPeriod;
+        expirience_description.append(li);
+    })
 }
 
-function changeLang() {
-    // console.log(partsOfRezumeEngl.aboutMeDescription.description);
+function educationFn() {
+    const education = lang==='ua' ? education_ua : education_en;
+    const block_name = lang==='ua' ? block_name_ua : block_name_en;
 
-    aboutMe();
-    workExpirience();
-    education();
+    const education_block_title = document.querySelector('#education_block_title')
+    const education_block_name = document.querySelector('#education_block_name')
+    const education_block_major = document.querySelector('#education_block_major')
+    const education_block_period = document.querySelector('#education_block_period')
+    education_block_title.innerHTML = block_name[1].name
+    education_block_name.innerHTML = education.title
+    education_block_major.innerHTML = education.magor
+    education_block_period.innerHTML = education.period
 }
+
+function contactsFn() {
+    const block_name = lang==='ua' ? block_name_ua : block_name_en;
+    const contacts_title = document.querySelector('#contacts_title')
+    const contacts_tel = document.querySelector('#contacts_tel')
+    const contacts_email_name = document.querySelector('#contacts_email_name')
+    const contacts_github_name = document.querySelector('#contacts_github_name')
+    const contacts_linkedin_name = document.querySelector('#contacts_linkedin_name')
+    contacts_title.innerHTML = block_name[3].name
+    contacts_tel.innerHTML = contacts.tel
+    contacts_tel.setAttribute("href",contacts.tel)
+    contacts_email_name.innerHTML = contacts.eMail
+    contacts_email_name.setAttribute("href","mailto"+contacts.eMail)
+    contacts_github_name.innerText = contacts.gitHUb
+    contacts_github_name.setAttribute("href",contacts.gitHUb)
+    contacts_linkedin_name.innerHTML = contacts.linkedin
+    contacts_linkedin_name.setAttribute("href",contacts.linkedin)
+
+}
+function skillsFn() {
+    const block_name = lang==='ua' ? block_name_ua : block_name_en;
+    const sidebar_title = document.querySelector('#sidebar_title')
+    const tech_skills_list = document.querySelector('#tech_skills_list')
+    tech_skills_list.innerHTML =''
+    sidebar_title.innerHTML = block_name[4].name
+    skills.map(skill => {
+        const li = document.createElement('li')
+        const span = document.createElement('span')
+        span.classList.add('tech-skills-item-text')
+        li.classList.add('tech-skills-item')
+        span.innerText = skill
+        li.append(span)
+        tech_skills_list.append(li)
+    })
+}
+
 

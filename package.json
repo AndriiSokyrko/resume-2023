@@ -1,0 +1,14 @@
+{
+  "name": "portfoilo",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "serve": "simple-server  3000"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "simple-server": "^1.1.1"
+  }
+}
