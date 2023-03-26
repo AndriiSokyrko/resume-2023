@@ -27,7 +27,7 @@ export const about_general_ua =
 export const about_ua = [
     'Фронтенд-розробка. Я відданий кодуванню  — створення класного коду JS/HTML, CSS/SCSS, ',
     'використання Javascript, React, Angular',
-    'це мій світ. Основная мета - якість, терміни  та реалізація проекта'
+    'це мій світ. Основна мета - якість, терміни  та реалізація проекта'
 ]
 export const about_en = [
     'Frontend Developer. I am obsessed my work – creation valid  JS/HTML code, implementation CSS5,',
