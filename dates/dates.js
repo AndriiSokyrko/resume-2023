@@ -25,9 +25,9 @@ export const about_general_ua =
     }
 
 export const about_ua = [
-    'Фронтенд-разработка. Я одержим своей работой — создание корректного кода JS/HTML, реализация CSS5, ',
-    'использование Javascript, React, Angular, интеграция различных API, слайдов, баннеров. Я полностью ',
-    'в этоом мире. Основная цель - удовлетворенность клиентов и качество реализации проектов '
+    'Фронтенд-розробка. Я відданий кодуванню  — створення класного коду JS/HTML, CSS/SCSS, ',
+    'використання Javascript, React, Angular',
+    'це мій світ. Основная мета - якість, терміни  та реалізація проекта'
 ]
 export const about_en = [
     'Frontend Developer. I am obsessed my work – creation valid  JS/HTML code, implementation CSS5,',
