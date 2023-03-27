@@ -40,7 +40,7 @@ function aboutFn(){
     const about_text = lang==='ua' ? about_ua : about_en;
     about_fio_block.innerHTML = about_general.name;
     about_major.innerHTML = about_general.magor;
-    about_description.innerHTML = about_text.join(',')
+    about_description.innerHTML = about_text.join('')
 }
 
 function coursesFn(){
