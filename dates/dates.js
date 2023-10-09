@@ -87,7 +87,6 @@ export const expirience_en = [
             'HTML +JS coding',
             'React/Redux, Angular',
             'Figma, Photoshop',
-            'https://freelance.ua/user/sorey14/portfolio/'
         ]
     },
     {
