@@ -127,8 +127,8 @@ export const expirience_ua = [
         period: 'червень 2019 - зараз ',
         duties: [
             'HTML +JS coding',
-            'CMS Open cart 1.5',
-            'Wordpress- Widget, layouts, custom fields…',
+            'React/Redux, Angular',
+            'Socket IO',
             'https://freelance.ua/user/sorey14/portfolio/'
         ]
     },
