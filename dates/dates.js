@@ -83,8 +83,8 @@ export const expirience_en = [
         period: 'June 2019 - now ',
         duties: [
             'HTML +JS coding',
-            'CMS Open cart 1.5',
-            'Wordpress- Widget, layouts, custom fields…',
+            'React/Redux, Angular',
+            'Figma, Photoshop',
             'https://freelance.ua/user/sorey14/portfolio/'
         ]
     },
@@ -92,6 +92,7 @@ export const expirience_en = [
         position: 'Ingenier-Programs  Central Ambulance of the  Lysyanka district',
         period: 'June 2019 - Februar 2020 ',
         duties: [
+            'Ensuring stable operation of Windows Server 2003/2008 servers',
             'Accounting programs',
             '(BestZvit, Dilcon) \/ add new users',
             'Administration of the Website <a class="my-projects-link" href="https://lisjanska.crl.net.ua"\>lisjanska.crl.net.ua</a>',
@@ -107,6 +108,7 @@ export const expirience_en = [
         period: 'September 2020 - May 2021 Ukraine',
         duties: [
             'Ensuring stable operation of Windows Server 2008/2016 servers',
+            'Administration Cisco 5005',
             'Administration of domain users (asset directory)',
             'Administration of the court website <a class="my-projects-link" href="https:\//ls.ck.court.gov.ua/sud2311"\> ls.ck.court.gov.ua/sud2311<\/a>',
             'System security, database backups (Firebase) / software D-3 (ship cases), Accord (video recording system), Izikon - communication with other ships',
