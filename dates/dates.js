@@ -126,11 +126,10 @@ export const expirience_ua = [
         position: 'Фріланс',
         period: 'червень 2019 - зараз ',
         duties: [
-            'HTML +JS coding',
-            'React/Redux, Angular',
+            'HTML / JS Vanila',
+            'React / Redux, Angular',
             'Socket IO',
-            'https://freelance.ua/user/sorey14/portfolio/'
-        ]
+            ]
     },
     {
         position: 'Інжерен програміст центральної районної лікарні  Лисянка(р-н)',
