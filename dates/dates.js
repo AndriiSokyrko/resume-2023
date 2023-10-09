@@ -86,6 +86,7 @@ export const expirience_en = [
         duties: [
             'HTML / JS Vanila',
             'React / Redux, Angular',
+            'Socket IO',
             'Figma, Photoshop',
         ]
     },
@@ -129,6 +130,7 @@ export const expirience_ua = [
             'HTML / JS Vanila',
             'React / Redux, Angular',
             'Socket IO',
+             'Figma, Photoshop',
             ]
     },
     {
