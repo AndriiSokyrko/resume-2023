@@ -84,8 +84,8 @@ export const expirience_en = [
         position: 'Freelance',
         period: 'June 2019 - now ',
         duties: [
-            'HTML +JS coding',
-            'React/Redux, Angular',
+            'HTML / JS Vanila',
+            'React / Redux, Angular',
             'Figma, Photoshop',
         ]
     },
