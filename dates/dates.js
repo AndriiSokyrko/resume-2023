@@ -57,7 +57,8 @@ export const cources = [
     {
         name: 'EPAM University Program Ukraine 2022 Frontend',
         year: '2022...',
-        sertificate: 'https://drive.google.com/file/d/1YsJG-0Uho8dgQCKwjfZJYGiEtGE4afVZ/view?usp=drive_link'
+        sertificate: 'https://drive.google.com/file/d/1YsJG-0Uho8dgQCKwjfZJYGiEtGE4afVZ/view?usp=drive_link',
+        sertificate: 'https://certificates.epam.com/certificates/6238dcd8-78f0-4e21-a52a-a5dfe49c10b4'
     }
 ]
 export const education_en =
